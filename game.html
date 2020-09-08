@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--include CSS file-->
+    <link rel="stylesheet" href="game.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!--include Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz app - Play</title>
+  </head>
+  <body>
+    <div class="containernew">
+      <!--Loading-->
+      <div id="loader"></div>
+      <div id="game" class="justify-center flex-column hidden">
+        <div id="hud">
+          <div id="hud-item">
+            <p id="progressText" class="hud-prefix">
+              <!--question-->
+            </p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div id="hud-item">
+            <p class="hud-prefix">
+              <!--score-->
+              Score
+            </p>
+            <h1 class="hud-main-text" id="score">
+              <!--something like 0-->
+              0
+            </h1>
+          </div>
+        </div>
+        <h2 id="question"></h2>
+        <div class="grid-container">
+          <div class="choice-container">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text" data-number="1"></p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text" data-number="2"></p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">C</p>
+            <p class="choice-text" data-number="3"></p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">D</p>
+            <p class="choice-text" data-number="4"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--include JS file-->
+    <script src="game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+@media only screen and (max-width: 600px) {
+  .containernew {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: fixed;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 70rem;
+    margin: 4rem;
+    padding: 4rem;
+    overflow: hidden;
+  }
+}
+
+.containernew {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.choice-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.2rem solid white;
+  background-color: black;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 0.5rem;
+}
+
+#game h2 {
+  margin-left: 1rem;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-0.3rem);
+  -ms-transform: translateY(-0.3rem);
+  transform: translateY(-0.3rem);
+  -webkit-transition: -webkit-transform 150ms;
+  transition: -webkit-transform 150ms;
+  -o-transition: transform 150ms;
+  transition: transform 150ms;
+  transition: transform 150ms, -webkit-transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  color: white;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  #question {
+    font-size: 6.4vw;
+  }
+  .choice-container {
+    font-size: 4vw;
+  }
+}
+
+/*HEAD'S UP DISPLAY*/
+#hud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+/*PROGRESS BAR*/
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid white;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: white;
+  width: 0%;
+}
+
+@media only screen and (max-width: 600px) {
+  #hud {
+    margin-top: 2rem;
+  }
+}
+
+/*LOADER*/
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid black;
+  width: 12rem;
+  height: 12rem;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
